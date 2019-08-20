@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Docker Build
-      run: docker build . --file Dockerfile --tag docker-template-image:$(date +%s)
+      run: docker build --tag `echo $GITHUB_REPOSITORY:$GITHUB_SHA | tr '[:upper:]' '[:lower:]'` .
