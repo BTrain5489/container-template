@@ -1,2 +1,2 @@
-# docker-template
-Template repo for Docker images
+# container-template
+Template repo for OCI-compliant container images
